@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="16dp">
+
+        <Button
+            android:id="@+id/btn_free"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selected_left"
+            android:text="Free" />
+
+        <Button
+            android:id="@+id/btn_fixed"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_mid"
+            android:text="Fixed" />
+
+        <Button
+            android:id="@+id/btn_bidding"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_right"
+            android:text="Bidding" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_fixed_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your fixed price"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="10dp"
+        android:inputType="numberDecimal"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/et_bidding_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Bid starting price"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="10dp"
+        android:inputType="numberDecimal"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/et_contact_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contact phone number"
+        android:inputType="number"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <CheckBox
+        android:id="@+id/cb_accept_terms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Accept terms and conditions"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:id="@+id/btn_publish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Publish"
+        android:backgroundTint="@color/selected_button_color"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="10dp"
+        />
+
+</LinearLayout>

@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Task9" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/selected_button_color</item>
+<!--        <item name="buttonStyle">@style/CustomButtonStyle</item>-->
+    </style>
+
+    <style name="Theme.Task9" parent="Base.Theme.Task9" />
+</resources>
